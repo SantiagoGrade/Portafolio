@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Form Card</title>
+  </head>
+  <body>
+    <section class="mainSection">
+      <section class="CardsSection">
+        <article class="imgCard1">
+          <h5 id="textcvc">000</h5>
+        </article>
+        <article class="imgCard2">
+          <img src="img/card-logo.svg" alt="" />
+          <div class="textsCard">
+            <h1 id="numCardImg">0000 0000 0000 0000</h1>
+            <div class="text2Card">
+              <h4 id="nomCardImg">JANE APPLESEED</h4>
+              <h4 id="datCardImg">00/00</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="formSection" id="formSection">
+        <form id="formulario">
+          <label for="name" class="labelform">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            placeholder="e.g Jane Applesed"
+            id="name"
+            class="heightInput"
+            maxlength="25"
+          />
+          <label class="lblErrorForm hidden animate__animated" id="lblnameError"
+            >No dejes este campo vacío por favor</label
+          >
+          <label for="cardnumber" class="labelform">CARD NUMBER</label>
+          <input
+            type="number"
+            id="numberCard"
+            class="heightInput"
+            placeholder="e.g 1234 5678 9123 0000"
+          />
+          <label
+            class="lblErrorForm hidden animate__animated"
+            id="lblnumcardError"
+            >Digita por favor un numero de 11 dígitos por favor</label
+          >
+          <section>
+            <div class="formdate">
+              <div>
+                <label class="labelform">EXP. DATE (MM/YY)</label>
+                <div class="formdateMMYY">
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="MM"
+                      class="inputdate heightInput"
+                      id="inputdate"
+                    />
+                    <label
+                      class="lblErrorForm hidden animate__animated"
+                      id="lblmesinvalido"
+                      >Mes inválido</label
+                    >
+                  </div>
+
+                  <div>
+                    <input
+                      type="number"
+                      placeholder="YY"
+                      id="inputyear"
+                      class="inputdate heightInput"
+                    />
+                    <label
+                      class="lblErrorForm hidden animate__animated"
+                      id="lblyearError"
+                    >
+                      Año inválido</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="formCvc">
+                <label for="cvc" class="labelform">CVC</label>
+                <div>
+                  <input
+                    type="number"
+                    placeholder="e.g. 123"
+                    class="heightInput inputdate"
+                    id="cvc"
+                  />
+                  <label
+                    class="lblErrorForm hidden animate__animated"
+                    id="cvcError"
+                  >
+                    cvc inválido</label
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <button type="submit" class="btnform" id="btnform">Confirm</button>
+        </form>
+      </section>
+      <section class="SecThanks hidden animate__animated" id="SecThanks">
+        <figure><img src="img/icon-complete.svg" alt="" /></figure>
+        <h1>THANK YOU!</h1>
+        <h4>We've added your card details</h4>
+        <a href="adminsection.html">
+          <button class="btnform btnSecthank" id="btnAdmin">Continue</button></a
+        >
+      </section>
+    </section>
+    <script src="./js/main.js" text="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+/* Normalizamos los estilos con el selector universal  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: hsl(10, 56%, 87%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.Card_Sec1 {
+  /*Anchode370px*/
+  width: 23.125rem;
+  /* ancho de 84px */
+  height: 5.25rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  /*Boder radius de20px*/
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+  /*Paddingde22px*/
+  padding: 1.375rem;
+}
+
+.textosHeaderCard {
+  color: hsl(27, 66%, 92%);
+}
+.textosHeaderCard h2 {
+  margin-top: 0.188rem;
+  /* fuente de 16 px  */
+  font-size: 1rem;
+}
+
+.textosHeaderCard h4 {
+  /* fuente de 12 px  */
+  font-size: 0.75rem;
+}
+
+.containerSecMain {
+  /*Anchode370px*/
+  width: 23.125rem;
+  height: 21.875rem;
+  background-color: hsl(33, 100%, 98%);
+  margin-top: 1.25rem;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+  /*Paddingde22px*/
+  padding: 1.375rem;
+}
+.Card_Sec2 {
+  border-bottom: 0.125rem solid hsl(27, 66%, 92%);
+  margin-bottom: 1.25rem;
+}
+
+.Card_Sec2 h2 {
+  /* Font size de 23 px  */
+  font-size: 1.4375rem;
+  color: hsl(25, 47%, 15%);
+}
+/* Ancho y border radius de todas las barras  */
+.wBar {
+  /*Anchode34px*/
+  width: 2.125rem;
+  /* Boder radius de 5 px  */
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+}
+/* Estilos para el texto debajo de las barras  */
+.texto_bar_centro {
+  text-align: center;
+  /* Tamaño fuente de 10px */
+  font-size: 0.625rem;
+  margin: 0.313rem;
+  color: hsl(28, 10%, 53%);
+}
+.graficos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  /* padding bottom de 10px */
+  padding-bottom: 0.625rem;
+}
+.graficos .Bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para Textos para las etiquetas encima de las barras  */
+
+.textActive {
+  visibility: hidden;
+  background-color: hsl(25, 47%, 15%);
+  padding: 0.3125rem;
+  font-size: 0.5625rem;
+  color: hsl(27, 66%, 92%);
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  -ms-border-radius: 0.3125rem;
+  -o-border-radius: 0.3125rem;
+  margin: 0.313rem 0;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+.Bars:hover .textActive {
+  visibility: visible;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+/* Empiezan las alturas para las barras  */
+.hBar1 {
+  height: 2.563rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.hBar2 {
+  height: 4.25rem;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.hBar3 {
+  height: 6.313rem;
+  background-color: hsl(186, 34%, 60%);
+}
+.hBar4 {
+  height: 3.813rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.hBar5 {
+  height: 2.875rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.hBar6 {
+  height: 5.25rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.hBar7 {
+  height: 3rem;
+  background-color: hsl(10, 79%, 65%);
+}
+
+/* Comienzan los estilos para el footer de la carta  */
+
+.Card_Sec3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textosFooterCard1 h4 {
+  color: hsl(28, 10%, 53%);
+  font-size: 0.75rem;
+}
+.textosFooterCard1 h1 {
+  margin-top: 0.313rem;
+  /* Tamaño de fuente de 31 px  */
+  font-size: 1.9375rem;
+  color: hsl(25, 47%, 15%);
+}
+
+.textosFooterCard2 {
+  text-align: right;
+}
+.textosFooterCard2 h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  margin-top: 1.5rem;
+}
+
+.textosFooterCard2 h4 {
+  color: hsl(28, 10%, 53%);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}

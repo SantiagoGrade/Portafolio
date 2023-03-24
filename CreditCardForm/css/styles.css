@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+/* Comienzo diseño mobile first  */
+/* Comienzan los estilos para la seccion1  */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.CardsSection {
+  background-image: url(../img/bg-main-mobile.png);
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imgCard1 {
+  background-image: url(../img/bg-card-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 160px;
+  object-fit: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  padding-right: 35px;
+}
+
+.imgCard2 {
+  background-image: url(../img/bg-card-front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 160px;
+  z-index: 1;
+  padding: 20px;
+  position: absolute;
+  margin-top: 100px;
+  transform: translateX(-15px);
+  -webkit-transform: translateX(-15px);
+  -moz-transform: translateX(-15px);
+  -ms-transform: translateX(-15px);
+  -o-transform: translateX(-15px);
+  -webkit-box-shadow: 3px 21px 29px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 3px 21px 29px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 3px 21px 29px 0px rgba(0, 0, 0, 0.46);
+}
+.imgCard2 img {
+  width: 50px;
+}
+
+.textsCard {
+  margin-top: 25px;
+  color: hsl(0, 0%, 100%);
+}
+.text2Card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.formSection {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.labelform {
+  color: hsl(278, 68%, 11%);
+  font-weight: 700;
+}
+#formulario {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.formdate {
+  display: flex;
+  gap: 10px;
+}
+.formdateMMYY {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.formCvc {
+  display: flex;
+  flex-direction: column;
+}
+.formCvc input {
+  width: 154px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.inputdate {
+  width: 100%;
+}
+
+.heightInput {
+  height: 40px;
+  font-weight: 700;
+  color: hsl(278, 68%, 11%);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 10px;
+}
+/* Quitamos las felcas de arriab ya bajo en los input number  */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input {
+  border: 1px solid hsl(279, 6%, 55%);
+}
+
+input:focus {
+  outline-color: #7c5e9a;
+}
+.btnform {
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  font-size: 1rem;
+  font-weight: 700px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border: 1px solid hsl(278, 68%, 11%);
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
+.btnform:hover {
+  border: 1px solid hsl(278, 68%, 11%);
+  color: hsl(278, 68%, 11%);
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 700px;
+  cursor: pointer;
+}
+.lblErrorForm {
+  font-size: 11px;
+  font-weight: 700;
+  color: hsl(0, 100%, 66%);
+}
+.inputError {
+  border: 2px solid hsl(0, 100%, 66%) !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btnDisabled {
+  background-color: hsl(270, 3%, 87%);
+  color: hsl(278, 68%, 11%);
+  border: 1px solid hsl(270, 3%, 87%);
+}
+.btnDisabled:hover {
+  cursor: default;
+  background-color: hsl(270, 3%, 87%);
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+/* Damos estilos para la seccion de agradecimiento 
+ */
+
+.SecThanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  row-gap: 20px;
+}
+.SecThanks h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.SecThanks h4 {
+  color: hsl(279, 6%, 55%);
+  font-size: 20px;
+}
+
+.btnSecthank {
+  width: 300px;
+}
+
+/* Comienzan los breakpoints  */
+
+@media (min-width: 900px) {
+  .mainSection {
+    flex-direction: row;
+  }
+  .CardsSection {
+    background-image: url(../img/bg-main-desktop.png);
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .imgCard1 {
+    width: 350px;
+    height: 200px;
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+    box-shadow: 3px 21px 29px -11px rgba(32, 31, 31, 0.45);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 200px;
+  }
+
+  .imgCard2 {
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    transform: translateX(70px);
+    -webkit-transform: translateX(70px);
+    -moz-transform: translateX(70px);
+    -ms-transform: translateX(70px);
+    -o-transform: translateX(70px);
+    box-shadow: 3px 21px 29px -11px rgba(32, 31, 31, 0.45);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 400px;
+  }
+  .imgCard2 img {
+    width: 70px;
+  }
+
+  .textsCard {
+    margin-top: 45px;
+    color: hsl(0, 0%, 100%);
+  }
+  .formSection {
+    margin-top: 7%;
+  }
+  #formulario {
+    width: 50%;
+  }
+
+  .SecThanks {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainSection {
+    flex-direction: row;
+  }
+  .CardsSection {
+    background-image: url(../img/bg-main-desktop.png);
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .imgCard1 {
+    width: 350px;
+    height: 200px;
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    box-shadow: 3px 21px 29px -11px rgba(32, 31, 31, 0.45);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 200px;
+  }
+
+  .imgCard2 {
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    transform: translateX(150px);
+    -webkit-transform: translateX(150px);
+    -moz-transform: translateX(150px);
+    -ms-transform: translateX(150px);
+    -o-transform: translateX(150px);
+    box-shadow: 3px 21px 29px -11px rgba(32, 31, 31, 0.45);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 400px;
+  }
+  .imgCard2 img {
+    width: 70px;
+  }
+
+  .textsCard {
+    margin-top: 45px;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .formSection {
+    margin-top: 7%;
+  }
+  #formulario {
+    width: 40%;
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "img": "img/agent-image.webp",
+    "profession": "Real Estate Broker",
+    "name": "Jhon Doe",
+    "tel": "123 456 7890",
+    "email": "agent@gmail.com"
+  },
+  {
+    "img": "img/agent-image-2.webp",
+    "profession": "Real Estate Broker",
+    "name": "Jane Doe",
+    "tel": "643 436 7890",
+    "email": "Jane4yf@gmail.com"
+  },
+  {
+    "img": "img/agent-image-3.webp",
+    "profession": "Real Estate Broker",
+    "name": "Julio Doe",
+    "tel": "123 087 7460",
+    "email": "julioagent23@gmail.com"
+  },
+  {
+    "img": "img/agent-image-4.webp",
+    "profession": "Appraiser",
+    "name": "Edgar Standford",
+    "tel": "567 446 71532",
+    "email": "amikedstand@gmail.com"
+  },
+  {
+    "img": "img/agent-image-5.webp",
+    "profession": "Farm administrator",
+    "name": "Dustin Alderlake",
+    "tel": "521 352 34324",
+    "email": "aldercon@gmail.com"
+  },
+  {
+    "img": "img/agent-image-6.webp",
+    "profession": "real estate credit",
+    "name": "Carla Volks",
+    "tel": "342 975 46353",
+    "email": "carls34@gmail.com"
+  },
+  {
+    "img": "img/agent-image-7.webp",
+    "profession": "Real Estate Broker",
+    "name": "Camils Espers",
+    "tel": "442 3424 4323",
+    "email": "camilsdrt@gmail.com"
+  },
+  {
+    "img": "img/agent-image-8.webp",
+    "profession": "Appraiser",
+    "name": "Yulia Spencer",
+    "tel": "442 3422 563",
+    "email": "yuliamcv@gmail.com"
+  },
+  {
+    "img": "img/agent-image-9.webp",
+    "profession": "Farm administrator",
+    "name": "Pedro Holmes",
+    "tel": "573 4475 342",
+    "email": "pert679@gmail.com"
+  }
+]

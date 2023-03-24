@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Comienzan los estilos para la seccion de administración  */
+
+nav {
+  background-color: hsl(278, 68%, 11%);
+  width: 100%;
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.btnform {
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  font-size: 1rem;
+  font-weight: 700px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border: 1px solid hsl(278, 68%, 11%);
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
+.btnform:hover {
+  border: 1px solid hsl(278, 68%, 11%);
+  color: hsl(278, 68%, 11%);
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 700px;
+  cursor: pointer;
+}
+
+.SecAdmin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+}
+table thead tr th,
+table tbody tr td {
+  border: 1px solid hsl(278, 68%, 11%);
+  padding: 5px;
+}
+#tableCards tr:nth-child(even) {
+  background-color: hsl(270, 3%, 87%);
+}
+#tableCards tr:hover {
+  background-color: #ddd;
+}
+
+table thead tr th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+}

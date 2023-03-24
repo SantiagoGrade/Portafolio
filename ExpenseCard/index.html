@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My expense card</title>
+  </head>
+  <body>
+    <!-- Comienzo maquetacion de la card  -->
+    <section class="card">
+      <!-- Comienza la sección 1 de la card  -->
+      <article class="Card_Sec1">
+        <div class="textosHeaderCard">
+          <h4>My balance</h4>
+          <h2>$921.48</h2>
+        </div>
+        <img src="img/logo.svg" alt="LogoCard" />
+      </article>
+      <!-- Termina seccion 1 de la card  -->
+      <!-- Comienza la seccion principal de la card  -->
+      <section class="containerSecMain">
+        <!-- Comienza la seccion 2 de las Barras de la card  -->
+        <article class="Card_Sec2">
+          <h2>Spending - Last 7 days</h2>
+          <figure class="graficos">
+            <div class="Bars">
+              <h4 class="textActive" id="1">$31.07</h4>
+              <div class="wBar hBar1"></div>
+              <h5 class="texto_bar_centro">mon</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="2">$31.07</h4>
+              <div class="wBar hBar2"></div>
+              <h5 class="texto_bar_centro">tue</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="3">$52.36</h4>
+              <div class="wBar hBar3"></div>
+              <h5 class="texto_bar_centro">wed</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="4">$31.07</h4>
+              <div class="wBar hBar4"></div>
+              <h5 class="texto_bar_centro">thu</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="5">$31.07</h4>
+              <div class="wBar hBar5"></div>
+              <h5 class="texto_bar_centro">fri</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="6">$31.07</h4>
+              <div class="wBar hBar6"></div>
+              <h5 class="texto_bar_centro">sat</h5>
+            </div>
+            <div class="Bars">
+              <h4 class="textActive" id="7">$31.07</h4>
+              <div class="wBar hBar7"></div>
+              <h5 class="texto_bar_centro">sun</h5>
+            </div>
+          </figure>
+        </article>
+        <!-- Termina Seccion de las barra de la card  -->
+
+        <!-- Comienza la seccion 3 de la card  -->
+        <article class="Card_Sec3">
+          <div class="textosFooterCard1">
+            <h4>Total this week</h4>
+            <h1 id="tituloWeek">$478.33</h1>
+          </div>
+          <div class="textosFooterCard2">
+            <h3>+2.4%</h3>
+            <h4>from last week</h4>
+          </div>
+        </article>
+        <!-- Termina la seccion 3 de la card  -->
+      </section>
+    </section>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

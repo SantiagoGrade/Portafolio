@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Empezamos los estilos para la card  */
+
+.Card {
+  width: 18.75rem;
+  height: 20rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+
+.Card figure {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  -webkit-border-radius: 1.875rem;
+  -moz-border-radius: 1.875rem;
+  -ms-border-radius: 1.875rem;
+  -o-border-radius: 1.875rem;
+  background-color: hsl(213, 15%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card2 {
+  width: 18.75rem;
+  height: 23rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.textoCard1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  margin-top: 1.563rem;
+  margin-bottom: 0.875rem;
+}
+
+.parrafoCard1 {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.25rem 0;
+  gap: 1.563rem;
+}
+
+.btncard1 {
+  background-color: hsl(213, 15%, 26%);
+  border: none;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  -webkit-border-radius: 1.875rem;
+  -moz-border-radius: 1.875rem;
+  -ms-border-radius: 1.875rem;
+  -o-border-radius: 1.875rem;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+}
+
+.btncard1:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.btncard1:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btnsubmitcard1 {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 0.625rem 6.563rem;
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+  font-weight: 700;
+  margin-top: 0.313rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  letter-spacing: 0.063rem;
+}
+
+.btnsubmitcard1:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  border: none;
+  letter-spacing: 0.063rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+.Card2 figure {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.875rem 0;
+}
+
+/* Empezamos estilos de la card 2  */
+
+.labelInfo {
+  margin: 1.2rem 0;
+  width: 10.313rem;
+  height: 1.813rem;
+  font-size: 0.813rem;
+  padding: 0.313rem;
+  border-radius: 1.25rem;
+  background-color: hsl(213, 15%, 26%);
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+}
+
+.textCard2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.parrafoCard2 {
+  margin-top: 10px;
+  font-size: 12px;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  color: hsl(217, 12%, 63%);
+}
+
+.regresar {
+  border: none;
+  margin: 0.938rem 0;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 0.813rem;
+  padding: 0.375rem 1.875rem;
+  border-radius: 0.313rem;
+  -webkit-border-radius: 0.313rem;
+  -moz-border-radius: 0.313rem;
+  -ms-border-radius: 0.313rem;
+  -o-border-radius: 0.313rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.regresar:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  border: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
